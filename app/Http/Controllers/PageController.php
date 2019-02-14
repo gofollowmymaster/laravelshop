@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     //
-    public function root()
+    public function root(Request  $request)
     {
+
         return view('pages.root');
     }
 }
