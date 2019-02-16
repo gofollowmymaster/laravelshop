@@ -29,7 +29,6 @@ class ProductsController extends Controller
     }
 
 
-
     /**
      * Edit interface.
      *

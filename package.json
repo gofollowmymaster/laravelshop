@@ -19,5 +19,9 @@
         "popper.js": "^1.12",
         "vue": "^2.5.16",
         "vue-template-compiler": "^2.6.6"
+    },
+    "dependencies": {
+        "china-area-data": "^4.0.0",
+        "sweetalert": "^2.1.2"
     }
 }
