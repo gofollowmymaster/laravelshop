@@ -228,6 +228,6 @@ return [
     ],
 
     //订单延时检测
-    'order_ttl' => 30,
+    'order_ttl' => 3000,
 
 ];
