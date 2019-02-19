@@ -13,6 +13,7 @@ $factory->define(App\Models\UserAddress::class, function (Faker $faker) {
     $address   = $faker->randomElement($addresses);
 
     return [
+
         'province'      => $address[0],
         'city'          => $address[1],
         'district'      => $address[2],

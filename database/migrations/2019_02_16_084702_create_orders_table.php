@@ -33,7 +33,7 @@ class CreateOrdersTable extends Migration
             $table->text('extra')->nullable();
             $table->timestamps();
         });
-        DB::statement("ALTER TABLE `pay_orders` ENGINE=InnoDB");
+        DB::statement("ALTER TABLE `orders` ENGINE=InnoDB");
     }
 
     /**

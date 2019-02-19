@@ -22,7 +22,7 @@ class CreateCartItemsTable extends Migration
             $table->unsignedInteger('amount');
         });
 
-        DB::statement("ALTER TABLE `pay_orders` ENGINE=InnoDB");
+        DB::statement("ALTER TABLE `cart_items` ENGINE=InnoDB");
     }
 
     /**

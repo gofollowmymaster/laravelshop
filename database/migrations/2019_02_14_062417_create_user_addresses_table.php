@@ -28,7 +28,7 @@ class CreateUserAddressesTable extends Migration
             $table->timestamps();
         });
 
-        DB::statement("ALTER TABLE `pay_orders` ENGINE=InnoDB");
+        DB::statement("ALTER TABLE `user_addresses` ENGINE=InnoDB");
     }
 
     /**

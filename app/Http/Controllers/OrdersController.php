@@ -101,9 +101,12 @@ class OrdersController extends Controller
                     'reviewed_at' => Carbon::now(),
                 ]);
             }
+
             // 将订单标记为已评价
             $order->update(['reviewed' => true]);
+
             event(new OrderReviewed($order));
+
         });
 
         return redirect()->back();

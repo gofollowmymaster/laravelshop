@@ -26,7 +26,7 @@ class CreateProductsTable extends Migration
             $table->timestamps();
         });
 
-        DB::statement("ALTER TABLE `pay_orders` ENGINE=InnoDB");
+        DB::statement("ALTER TABLE `products` ENGINE=InnoDB");
     }
 
     /**

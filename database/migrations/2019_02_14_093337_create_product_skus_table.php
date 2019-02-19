@@ -23,7 +23,7 @@ class CreateProductSkusTable extends Migration
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->timestamps();
         });
-        DB::statement("ALTER TABLE `pay_orders` ENGINE=InnoDB");
+        DB::statement("ALTER TABLE `product_skus` ENGINE=InnoDB");
     }
 
     /**

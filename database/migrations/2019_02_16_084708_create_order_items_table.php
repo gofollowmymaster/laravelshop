@@ -28,7 +28,7 @@ class CreateOrderItemsTable extends Migration
             $table->timestamp('reviewed_at')->nullable();
         });
 
-        DB::statement("ALTER TABLE `pay_orders` ENGINE=InnoDB");
+        DB::statement("ALTER TABLE `order_items` ENGINE=InnoDB");
     }
 
     /**
