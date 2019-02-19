@@ -42,6 +42,7 @@ Route::get('products', 'ProductsController@index')->name('products.index');
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
 Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('payment.alipay.notify');
 
+
 Route::get('alipay', function() {
     return app('alipay')->web([
         'out_trade_no' => time(),
