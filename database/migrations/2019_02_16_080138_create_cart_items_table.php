@@ -21,6 +21,8 @@ class CreateCartItemsTable extends Migration
             $table->foreign('product_sku_id')->references('id')->on('product_skus')->onDelete('cascade');
             $table->unsignedInteger('amount');
         });
+
+        DB::statement("ALTER TABLE `pay_orders` ENGINE=InnoDB");
     }
 
     /**

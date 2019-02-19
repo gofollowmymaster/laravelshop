@@ -27,6 +27,8 @@ class CreateUserAddressesTable extends Migration
             $table->dateTime('last_used_at')->nullable();
             $table->timestamps();
         });
+
+        DB::statement("ALTER TABLE `pay_orders` ENGINE=InnoDB");
     }
 
     /**

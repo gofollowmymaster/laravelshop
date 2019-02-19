@@ -25,6 +25,8 @@ class CreateProductsTable extends Migration
             $table->decimal('price', 10, 2);
             $table->timestamps();
         });
+
+        DB::statement("ALTER TABLE `pay_orders` ENGINE=InnoDB");
     }
 
     /**
