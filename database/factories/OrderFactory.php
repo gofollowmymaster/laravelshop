@@ -27,26 +27,32 @@ $factory->define(Order::class, function (Faker $faker) {
 
     return [
         'address'        => [
-            'address'       => $address->full_address,
-            'zip'           => $address->zip,
-            'contact_name'  => $address->contact_name,
-            'contact_phone' => $address->contact_phone,
+            'address'       => $address->full_address??'',
+            'zip'           => $address->zip??'',
+            'contact_name'  => $address->contact_name??'',
+            'contact_phone' => $address->contact_phone??'',
         ],
+//        'address'           => json_encode([
+//            'address'       => $address->full_address??'',
+//            'zip'           => $address->zip??'',
+//            'contact_name'  => $address->contact_name??'',
+//            'contact_phone' => $address->contact_phone??'',
+//        ]),
         'total_amount'   => 0,
         'remark'         => $faker->sentence,
         'paid_at'        => $faker->dateTimeBetween('-30 days'), // 30天前到现在任意时间点
         'payment_method' => $faker->randomElement(['wechat', 'alipay']),
         'payment_no'     => $faker->uuid,
         'refund_status'  => $refund ? Order::REFUND_STATUS_SUCCESS : Order::REFUND_STATUS_PENDING,
-        'refund_no'      => $refund ? Order::getAvailableRefundNo() : null,
+        'refund_no'      => $refund ? Order::getAvailableNo('refund_no') : null,
         'closed'         => false,
         'reviewed'       => random_int(0, 10) > 2,
         'ship_status'    => $ship,
-        'ship_data'      => $ship === Order::SHIP_STATUS_PENDING ? null : [
+        'ship_data'      => $ship === Order::SHIP_STATUS_PENDING ? null : json_encode([
             'express_company' => $faker->company,
             'express_no'      => $faker->uuid,
-        ],
-        'extra'          => $refund ? ['refund_reason' => $faker->sentence] : [],
+        ]),
+        'extra'          => $refund ? ['refund_reason' => $faker->sentence] : json_encode([]),
         'user_id'        => $user->id,
         'coupon_code_id' => $coupon ? $coupon->id : null,
     ];
