@@ -25,7 +25,7 @@ $factory->define(App\Models\CouponCode::class, function (Faker $faker) {
         'code'       => App\Models\CouponCode::findAvailableCode(), // 调用优惠码生成方法
         'type'       => $type,
         'value'      => $value,
-        'total'      => 1000,
+        'total'      => 10000,
         'used'       => 0,
         'min_amount' => $minAmount,
         'not_before' => null,
