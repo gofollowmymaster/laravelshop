@@ -23,5 +23,7 @@ class UsersSeeder extends Seeder
             }
         }
         echo 'over:' . now() . "\n";
+
+
     }
 }
