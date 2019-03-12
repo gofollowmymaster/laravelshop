@@ -8,6 +8,7 @@ use App\Exceptions\InvalidRequestException;
 use App\Models\OrderItem;
 use App\Models\Category;
 
+
 class ProductsController extends Controller
 {
     //
@@ -67,7 +68,7 @@ class ProductsController extends Controller
                 'order'  => $order,
             ],
             // 等价于 isset($category) ? $category : null
-            'category' => $category ?? null,
+            'category'     => $category??'',
         ]);
     }
 
