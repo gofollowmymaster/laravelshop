@@ -23,7 +23,7 @@ class CreateCategoriesTable extends Migration
             $table->string('path');
             $table->timestamps();
         });
-        DB::statement("ALTER TABLE `order_items` ENGINE=InnoDB");
+        DB::statement("ALTER TABLE `categories` ENGINE=InnoDB");
     }
 
     /**

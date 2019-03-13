@@ -48,7 +48,7 @@
                         <div class="order-info">
                             <div class="line">
                                 <div class="line-label">收货地址：</div>
-                                <div class="line-value">{{  $order->address }}</div>
+                                <div class="line-value">{{  implode('',$order->address) }}</div>
                             </div>
                             <div class="line">
                                 <div class="line-label">订单备注：</div>
@@ -67,7 +67,7 @@
                             @if($order->ship_data)
                                 <div class="line">
                                     <div class="line-label">物流信息：</div>
-                                    <div class="line-value">{{ $order->ship_data }} {{ $order->ship_data }}</div>
+                                    <div class="line-value">{{ $order->ship_data }}</div>
                                 </div>
                             @endif
 

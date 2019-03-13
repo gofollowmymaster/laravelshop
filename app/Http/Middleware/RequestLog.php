@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
 
 class RequestLog
 {
@@ -16,7 +17,7 @@ class RequestLog
      */
     public function handle($request, Closure $next)
     {
-        if($request->hasHeader('Referer')){
+        if($request->hasHeader('Accept')){
             Log::info('Request-start-log:', ['Url:'.$request->fullUrl().'--IP:'.$request->getClientIps()[0]]);
         }
 
@@ -25,7 +26,7 @@ class RequestLog
 
     public function terminate($request, $response)
     {
-        if($request->hasHeader('Referer')){
+        if($request->hasHeader('Accept')){
             Log::info('Request-over-log:', ['Url:'.$request->fullUrl().'--IP:'.$request->getClientIps()[0]]);
         }
 

@@ -20,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
+
         //监听数据库语句
         DB::listen(function ($query) {
                  Log::info('Sql-log:', [$query->sql.'  -- bindings:'.json_encode($query->bindings).'   -- queryTime:'.$query->time]);
