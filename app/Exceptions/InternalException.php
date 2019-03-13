@@ -3,6 +3,8 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Http\Request;
+
 
 class InternalException extends Exception
 {
@@ -22,5 +24,14 @@ class InternalException extends Exception
         }
 
         return view('pages.error', ['msg' => $this->msgForUser]);
+    }
+
+    public function report(){
+
+        $title = $this->msgForUser;
+        $text = $this->getMessage().$this->getTraceAsString();
+        $picUrl = "";
+        $messageUrl = request()->url();
+        ding()->link($title,$text,$messageUrl,$picUrl);
     }
 }

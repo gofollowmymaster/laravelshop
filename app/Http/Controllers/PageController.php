@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     //
-    public function root(Request  $request)
+    public function index(Request  $request)
     {
+        throw new \App\Exceptions\InternalException('test');
 
         return view('pages.root');
     }

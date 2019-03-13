@@ -103,6 +103,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/wangju/ding-notice" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yansongda/pay" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yansongda/supports" />
@@ -212,6 +213,7 @@
           <root url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
           <root url="file://$MODULE_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
+          <root url="file://$MODULE_DIR$/vendor/wangju/ding-notice" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/yansongda/pay" />
           <root url="file://$MODULE_DIR$/vendor/yansongda/supports" />
@@ -317,6 +319,7 @@
           <root url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
           <root url="file://$MODULE_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
+          <root url="file://$MODULE_DIR$/vendor/wangju/ding-notice" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/yansongda/pay" />
           <root url="file://$MODULE_DIR$/vendor/yansongda/supports" />
