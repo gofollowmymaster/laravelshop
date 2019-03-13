@@ -13,7 +13,7 @@ class OrdersSeeder extends Seeder
         // 获取 Faker 实例
         $faker = app(Faker\Generator::class);
         // 创建 100 笔订单
-        for($i=0;$i<100;$i++) {
+        for($i=0;$i<10;$i++) {
 
             echo  $i.'start:'.now()."\n" ;
             try {
