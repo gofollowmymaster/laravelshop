@@ -8,6 +8,7 @@ use Monolog\Logger;
 use Yansongda\Pay\Pay;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Carbon\Carbon;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,6 +21,8 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
+
+        Carbon::setLocale('zh');
 
         //监听数据库语句
         DB::listen(function ($query) {
