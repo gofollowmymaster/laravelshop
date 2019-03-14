@@ -48,6 +48,7 @@ class FinishCrowdfunding extends Command
         $crowdfunding->update([
             'status' => CrowdfundingProduct::STATUS_FAIL,
         ]);
+        echo $crowdfunding->id.'failed';
         dispatch(new RefundCrowdfundingOrders($crowdfunding));
     }
 }

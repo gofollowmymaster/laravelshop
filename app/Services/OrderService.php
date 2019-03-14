@@ -147,7 +147,7 @@ class OrderService
         switch ($order->payment_method) {
             case 'wechat':
                 // 生成退款订单号
-                $refundNo = Order::getAvailableRefundNo();
+                $refundNo = Order::getAvailableNo('refund_no');
                 app('wechat_pay')->refund([
                     'out_trade_no' => $order->no,
                     'total_fee' => $order->total_amount * 100,
@@ -161,7 +161,7 @@ class OrderService
                 ]);
                 break;
             case 'alipay':
-                $refundNo = Order::getAvailableRefundNo();
+                $refundNo =Order::getAvailableNo('refund_no');
                 $ret = app('alipay')->refund([
                     'out_trade_no' => $order->no,
                     'refund_amount' => $order->total_amount,
