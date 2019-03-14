@@ -10,6 +10,7 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 use App\Events\OrderPaid;
 use App\Listeners\SendOrderPaidMail;
 use App\Listeners\UpdateProductSoldCount;
+use App\Listeners\UpdateCrowdfundingProductProgress;
 
 use App\Events\OrderReviewed;
 use App\Listeners\UpdateProductRating;

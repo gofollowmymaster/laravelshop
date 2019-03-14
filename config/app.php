@@ -229,5 +229,7 @@ return [
 
     //订单延时检测
     'order_ttl' => 3000,
+    //内网穿透url
+    'ngrok_url' => env('NGROK_URL'),
 
 ];
