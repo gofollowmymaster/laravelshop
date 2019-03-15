@@ -4,8 +4,11 @@ namespace App\Providers;
 
 use App\Policies\UserAddressPolicy;
 use App\Policies\OrderPolicy;
+use App\Policies\InstallmentPolicy;
 use App\Models\Order;
 use App\Models\UserAddress;
+use App\Models\Installment;
+
 
 
 use Illuminate\Support\Facades\Gate;

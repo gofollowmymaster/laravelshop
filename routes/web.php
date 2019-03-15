@@ -58,13 +58,25 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     Route::get('installments', 'InstallmentsController@index')->name('installments.index');//分期列表
     Route::get('installments/{installment}', 'InstallmentsController@show')->name('installments.show');
 
+    //支付
+    Route::get('installments/{installment}/alipay', 'InstallmentsController@payByAlipay')->name('installments.alipay');
+    Route::get('installments/alipay/return', 'InstallmentsController@alipayReturn')->name('installments.alipay.return');
+
 
 });
+
+
 
 Route::redirect('/', '/products')->name('root');
 Route::get('products', 'ProductsController@index')->name('products.index');
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
+
+// 后端回调不能放在 auth 中间件中
 Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('payment.alipay.notify');
+Route::post('installments/alipay/notify', 'InstallmentsController@alipayNotify')->name('installments.alipay.notify');
+
+
+//测试页面
 Route::get('/testpage', 'PageController@index')->name('page');
 
 Route::get('alipay', function() {
