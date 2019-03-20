@@ -16,6 +16,9 @@
 // 在之前的路由里加上一个 verify 参数
 Auth::routes(['verify' => true]);
 
+//秒殺
+Route::post('seckill_orders', 'OrdersController@seckill')->name('seckill_orders.store');
+
 // auth 中间件代表需要登录，verified中间件代表需要经过邮箱验证
 Route::group(['middleware' => ['auth', 'verified']], function() {
     Route::get('user_addresses', 'UserAddressesController@index')->name('user_addresses.index');
@@ -61,8 +64,6 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     //支付
     Route::get('installments/{installment}/alipay', 'InstallmentsController@payByAlipay')->name('installments.alipay');
     Route::get('installments/alipay/return', 'InstallmentsController@alipayReturn')->name('installments.alipay.return');
-    //秒殺
-    Route::post('seckill_orders', 'OrdersController@seckill')->name('seckill_orders.store');
 
 
 });

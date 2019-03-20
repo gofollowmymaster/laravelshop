@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4b8ad982-b4ee-414a-a437-3afcb686ca5f" name="Default" comment="优化seeder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/Controllers/SeckillProductsController.php" afterPath="$PROJECT_DIR$/app/Admin/Controllers/SeckillProductsController.php" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/SeckillOrderRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/SeckillOrderRequest.php" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/CloseOrder.php" afterPath="$PROJECT_DIR$/app/Jobs/CloseOrder.php" />
       <change beforePath="$PROJECT_DIR$/app/Services/OrderService.php" afterPath="$PROJECT_DIR$/app/Services/OrderService.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeckillOrderRequest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SeckillOrderRequest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Requests/SeckillOrderRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+            <state relative-caret-position="297">
+              <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
               <folding>
                 <element signature="e#38#59#0#PHP" expanded="true" />
               </folding>
@@ -35,8 +36,8 @@
       <file leaf-file-name="OrderService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Services/OrderService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="199" column="23" lean-forward="false" selection-start-line="199" selection-start-column="23" selection-end-line="199" selection-end-column="23" />
+            <state relative-caret-position="459">
+              <caret line="232" column="50" lean-forward="false" selection-start-line="232" selection-start-column="50" selection-end-line="232" selection-end-column="50" />
               <folding>
                 <element signature="e#378#3150#0#PHP" expanded="false" />
                 <element signature="e#3197#4923#0#PHP" expanded="false" />
@@ -51,85 +52,6 @@
             <state relative-caret-position="6534">
               <caret line="242" column="31" lean-forward="false" selection-start-line="242" selection-start-column="31" selection-end-line="242" selection-end-column="31" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/products/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="423" column="72" lean-forward="true" selection-start-line="423" selection-start-column="72" selection-end-line="423" selection-end-column="72" />
-              <folding>
-                <marker date="1553048292392" expanded="true" signature="9:22" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="33:57" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="69:78" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="366:387" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="523:564" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="651:708" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="936:974" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="1344:1377" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="1586:1629" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="1867:1900" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="1990:2026" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="2187:2269" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="2392:2447" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="2575:2614" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="2853:2907" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="3212:3229" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="3396:3418" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="3523:3547" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="3631:3649" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="3718:3760" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="3764:3810" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="4264:4286" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="4465:4478" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="4544:4557" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="4688:4707" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="4888:4898" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="4905:4918" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="5362:5370" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="5728:5785" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="5831:5844" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="5894:5976" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="6283:6360" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="6597:6613" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="6777:6829" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="6875:6888" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="6938:6972" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="7152:7183" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="7633:7649" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="9224:9272" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="9324:9331" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="9336:9356" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="9646:9669" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="10491:10510" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="10607:10635" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="10693:10721" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="10779:10813" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="10817:10855" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="10913:10930" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="10988:11031" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="11421:11440" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="11656:11676" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="12008:12061" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="12134:12155" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="12356:12373" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="12513:12566" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="12572:12589" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="13048:13064" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="13119:13208" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="13825:13879" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="14717:14774" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="15185:15204" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="15565:15586" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="16965:17024" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="18927:18963" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="20298:20387" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="20468:20513" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="21848:21907" ph="..." />
-                <marker date="1553048292392" expanded="true" signature="23225:23256" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -156,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="laravel-2019-03-20.log" pinned="false" current-in-tab="true">
+      <file leaf-file-name="laravel-2019-03-20.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-03-20.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
             <state relative-caret-position="825">
@@ -165,21 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CloseOrder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Jobs/CloseOrder.php">
+      <file leaf-file-name="SeckillProductsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SeckillProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="403">
+              <caret line="51" column="79" lean-forward="true" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/Tencent Files/3472417436/FileRecv/TestsController.php">
+      <file leaf-file-name="CloseOrder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Jobs/CloseOrder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="295">
+              <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -188,8 +110,8 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
-              <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="19" column="88" lean-forward="false" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -259,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_14_173241_create_installments_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_14_173248_create_installment_items_table.php" />
         <option value="$PROJECT_DIR$/bootstrap/helpers.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" />
@@ -299,17 +220,18 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_03_19_135253_create_seckill_products_table.php" />
         <option value="$PROJECT_DIR$/app/Models/SeckillProduct.php" />
         <option value="$PROJECT_DIR$/app/Models/Product.php" />
-        <option value="$PROJECT_DIR$/app/Admin/Controllers/SeckillProductsController.php" />
         <option value="$PROJECT_DIR$/app/Admin/routes.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/CrowdfundingProductsController.php" />
         <option value="$PROJECT_DIR$/app/Models/Order.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$USER_HOME$/Documents/Tencent Files/3472417436/FileRecv/TestsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/SeckillOrderRequest.php" />
-        <option value="$PROJECT_DIR$/app/Services/OrderService.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" />
         <option value="$PROJECT_DIR$/resources/views/products/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Admin/Controllers/SeckillProductsController.php" />
+        <option value="$PROJECT_DIR$/app/Services/OrderService.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/CloseOrder.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/SeckillOrderRequest.php" />
       </list>
     </option>
   </component>
@@ -480,19 +402,6 @@
               <item name="laravel-shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-shop" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-shop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-shop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -518,6 +427,11 @@
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="products" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="laravel-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-shop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -572,7 +486,7 @@
       <workItem from="1552372971233" duration="34078000" />
       <workItem from="1552525922965" duration="24616000" />
       <workItem from="1552701966646" duration="32383000" />
-      <workItem from="1553044133504" duration="2493000" />
+      <workItem from="1553044133504" duration="3056000" />
     </task>
     <task id="LOCAL-00001" summary="优化seeder">
       <created>1550633199152</created>
@@ -585,7 +499,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231584000" />
+    <option name="totallyTimeSpent" value="232147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -600,7 +514,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33079433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33079433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -941,36 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SeckillProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#118#141#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/CloseOrder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -996,27 +884,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SeckillOrderRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <element signature="e#38#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/OrderService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="199" column="23" lean-forward="false" selection-start-line="199" selection-start-column="23" selection-end-line="199" selection-end-column="23" />
-          <folding>
-            <element signature="e#378#3150#0#PHP" expanded="false" />
-            <element signature="e#3197#4923#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,6 +978,51 @@
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="825">
           <caret line="499" column="109" lean-forward="false" selection-start-line="499" selection-start-column="109" selection-end-line="499" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/SeckillProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="51" column="79" lean-forward="true" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/OrderService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="232" column="50" lean-forward="false" selection-start-line="232" selection-start-column="50" selection-end-line="232" selection-end-column="50" />
+          <folding>
+            <element signature="e#378#3150#0#PHP" expanded="false" />
+            <element signature="e#3197#4923#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/CloseOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="88" lean-forward="false" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SeckillOrderRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="e#38#59#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
