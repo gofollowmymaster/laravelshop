@@ -14,7 +14,7 @@ class UsersSeeder extends Seeder
 
         echo 'start:' . now() . "\n";
         // 通过 factory 方法生成 100 个用户并保存到数据库中
-        for ($i=0;$i<200;$i++) {
+        for ($i=0;$i<10;$i++) {
             try {
                 factory(\App\Models\User::class, 500)->create();
             } catch (\Exception $e) {

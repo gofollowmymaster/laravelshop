@@ -18,7 +18,7 @@ class OrdersSeeder extends Seeder
             echo  $i.'start:'.now()."\n" ;
             try {
                 // 创建 ** 笔订单
-                $orders = factory(Order::class, 1000)->create();
+                $orders = factory(Order::class, 100)->create();
 
                 // 被购买的商品，用于后面更新商品销量和评分
                 $products = collect([]);
